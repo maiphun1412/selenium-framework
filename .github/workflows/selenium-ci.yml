@@ -22,7 +22,7 @@ jobs:
           cache: maven
 
       - name: Run Selenium Tests
-        run: mvn clean test "-Dbrowser=chrome" "-DsuiteXmlFile=testng-smoke.xml"
+        run: mvn clean test "-Dbrowser=chrome" "-DsuiteXmlFile=testng.xml"
 
       - name: Upload artifacts
         if: always()
