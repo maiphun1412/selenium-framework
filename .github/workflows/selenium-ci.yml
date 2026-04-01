@@ -9,10 +9,6 @@ on:
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        browser: [chrome, firefox]
 
     steps:
       - name: Checkout source code
@@ -27,13 +23,15 @@ jobs:
 
       - name: Run Selenium Tests
         run: mvn clean test "-Dbrowser=${{ matrix.browser }}" "-DsuiteXmlFile=testng-smoke.xml"
-
+        env:
+          APP_USERNAME: ${{ secrets.SAUCEDOMO_USERNAME }}
+          APP_PASSWORD: ${{ secrets.SAUCEDOMO_PASSWORD }}
 
       - name: Upload artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-results-${{ matrix.browser }}
+          name: test-results
           path: |
             target/surefire-reports/
             target/screenshots/

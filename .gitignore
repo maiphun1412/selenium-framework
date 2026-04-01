@@ -5,3 +5,4 @@ target/
 screenshots/
 allure-results/
 allure-report/
+.env
