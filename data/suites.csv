@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"Đăng nhập với mật khẩu không đúng","552","testLoginWithInvalidPassword","Smoke Suite","Thu May 28 06:06:25 UTC 2026","passed","Thu May 28 06:06:25 UTC 2026","framework.tests.LoginTest","Login Smoke Test","framework.tests.LoginTest","testLoginWithInvalidPassword"
-"Đăng nhập với tài khoản hợp lệ","313","testLoginWithValidAccount","Smoke Suite","Thu May 28 06:06:32 UTC 2026","passed","Thu May 28 06:06:33 UTC 2026","framework.tests.LoginTest","Login Smoke Test","framework.tests.LoginTest","testLoginWithValidAccount"
-"User locked không được login","710","testLoginWithLockedUser","Smoke Suite","Thu May 28 06:06:28 UTC 2026","passed","Thu May 28 06:06:29 UTC 2026","framework.tests.LoginTest","Login Smoke Test","framework.tests.LoginTest","testLoginWithLockedUser"
+"Đăng nhập với tài khoản hợp lệ","370","testLoginWithValidAccount","Smoke Suite","2026-05-29","passed","2026-05-29","framework.tests.LoginTest","Login Smoke Test","framework.tests.LoginTest","testLoginWithValidAccount"
+"Đăng nhập với mật khẩu không đúng","522","testLoginWithInvalidPassword","Smoke Suite","2026-05-29","passed","2026-05-29","framework.tests.LoginTest","Login Smoke Test","framework.tests.LoginTest","testLoginWithInvalidPassword"
+"User locked không được login","709","testLoginWithLockedUser","Smoke Suite","2026-05-29","passed","2026-05-29","framework.tests.LoginTest","Login Smoke Test","framework.tests.LoginTest","testLoginWithLockedUser"
